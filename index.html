@@ -41,7 +41,7 @@
 
 <!-- About me -->
     <main>
-        <section class="aboutme">
+        <section class="aboutme" id="aboutMe">
             <figure class="card-about-me">
                 <figcaption>
                     <img src="/images/fontdev_astronaut-cat.jpg" width="650px" alt="spacecat">
@@ -66,8 +66,8 @@
 <!-- My skills -->
         <section class="my-skill">
             <div class="intro-myskill">
-                <h3>Mes compétences</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, doloremque animi! Labore fugit ullam esse porro aperiam molestiae vel vitae ad deserunt nam at, voluptatum tempora tempore asperiores beatae aliquid! Expedita ipsum omnis esse provident impedit velit similique, illo nostrum explicabo cumque eaque aspernatur corporis magni id libero. Tempore perspiciatis molestiae, dolore blanditiis fuga incidunt deserunt fugit. Possimus, ducimus voluptate? Repellat!</p>
+                <h3>Mes compétences</h3> <!--3 lignes + 3mots-->
+                <p>En tant que développeur web junior les langages que j'ai beaucoup travaillé en formation sont le HTML CSS Javascript PHP et MySQL et étant passionné par le code, sur mon temps libre j'ai entamé l'apprentissage de REACT et Symfony qui sont 2 langages suplémentaires qui m'interesse énormement, en support pour mes cours et mon apprentissage j'utilise nottament les cours de <a class="soutient" target="_blank" href="https://fromscratch.podia.com/">"From Scratch"</a> pour le front-end et <a class="soutient" target="_blank" href="https://nouvelle-techno.fr/">"Nouvelle-Techno"</a> pour le back-end que je trouve extrêment bien construit.</p>
             </div>
             <div class="skillcards-panel">
                 <div class="card-skill">
@@ -132,46 +132,20 @@
             </div>
         </section>
 
-<!-- My Skills new presentation -->
-        <section class="NewSkills">
-            <article class="skillup">
-                <div class="slider-skill" style="
-                    --width: 100px;
-                    --height: 50px;
-                    --quantity: 10;
-                    ">
-                    <div class="list">
-                        <div class="item" style="--position: 1"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 2"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 3"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 4"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 5"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 6"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 7"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 8"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 9"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                        <div class="item" style="--position: 10"><img src="/images/logo/Small logo/small-html.webp" alt="logo1"></div>
-                    </div>
+<!-- My Creations -->
+        <section class="my-creations">
+            <div class="gallery">
+                <div class="main-image-container">
+                    <img src="/images/Sites/Jadoo.png" alt="Image principale 1" class="main-image" id="mainImage1">
+                    <img src="/images/Sites/Jadoo.png" alt="Image principale 2" class="main-image" id="mainImage2" style="opacity: 0;">
                 </div>
-
-                <div class="slider-skill" reverse="true" style="
-                --width: 200px;
-                --height: 200px;
-                --quantity: 9;
-                    ">
-                    <div class="list">
-                        <div class="item" style="--position: 1"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 2"><img src="/images/logo/css.png" alt="logo1"></div>
-                        <div class="item" style="--position: 3"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 4"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 5"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 6"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 7"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 8"><img src="/images/logo/html.png" alt="logo1"></div>
-                        <div class="item" style="--position: 9"><img src="/images/logo/html.png" alt="logo1"></div>
-                    </div>
+                <div class="thumbnails">
+                    <img src="/images/Sites/Jadoo.png" alt="Miniature 1" class="thumbnail" onclick="changeImage(this.src)">
+                    <img src="/images/Sites/Travel to the future.png" alt="Miniature 2" class="thumbnail" onclick="changeImage(this.src)">
+                    <img src="/images/Sites/Take-a-FeaRIEND.png" alt="Miniature 3" class="thumbnail" onclick="changeImage(this.src)">
+                    <img src="/images/Sites/OnlineFormaPro.png" alt="Miniature 4" class="thumbnail" onclick="changeImage(this.src)">
                 </div>
-            </article>
+            </div>
         </section>
 
 <!-- Contact Me -->
@@ -212,30 +186,142 @@
             </form>
         </section>
 
-
-
         <section>
-            <div class="testblock">
-                <div class="gallery">
-                    <div class="main-image-container">
-                        <img src="/images/fontdev_BackToTheFuture01.jpg" alt="Image principale 1" class="main-image" id="mainImage1">
-                        <img src="/images/fontdev_BackToTheFuture01.jpg" alt="Image principale 2" class="main-image" id="mainImage2" style="opacity: 0;">
+            <div class="carousel">
+                <div class="item active">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:0;">
+                                <h2>Jadoo</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus. Eaque aut nobis pariatur, voluptatum quo quaerat nesciunt dolorem nam, dicta, reiciendis aliquid magni.</p>
+                                <a href="#" class="btn">Voir le site</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="thumbnails">
-                        <img src="/images/fontdev_cute-fox.jpg" alt="Miniature 1" class="thumbnail" onclick="changeImage(this.src)">
-                        <img src="/images/fontdev_BackToTheFuture02.jpg" alt="Miniature 2" class="thumbnail" onclick="changeImage(this.src)">
-                        <img src="/images/fontdev_synthwave-car-sunset-palm-tree.jpg" alt="Miniature 3" class="thumbnail" onclick="changeImage(this.src)">
-                        <img src="/images/fontdev_retro.jpg" alt="Miniature 4" class="thumbnail" onclick="changeImage(this.src)">
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:0;">
+                                <img src="/images/Sites/Jadoo.png">
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="item">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:1;">
+                                <h2>Travel to the Future</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus. Eaque aut nobis pariatur, voluptatum quo quaerat nesciunt dolorem nam, dicta, reiciendis aliquid magni.</p>
+                                <a href="#" class="btn">Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:1;">
+                                <img src="/images/Sites/Travel to the future.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:2;">
+                                <h2>Take a FeaRIEND</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus. Eaque aut nobis pariatur, voluptatum quo quaerat nesciunt dolorem nam, dicta, reiciendis aliquid magni.</p>
+                                <a href="#" class="btn">Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:2;">
+                                <img src="/images/Sites/Take-a-FeaRIEND.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:3;">
+                                <h2>Online FormaPro</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus. Eaque aut nobis pariatur, voluptatum quo quaerat nesciunt dolorem nam, dicta, reiciendis aliquid magni.</p>
+                                <a href="#" class="btn">Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:3;">
+                                <img src="/images/Sites/OnlineFormaPro.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="bg"></div>
+                    <div class="info-box">
+                        <div class="info-slider">
+                            <div class="info-item" style="--i:4;">
+                                <h2>Ardace Zone</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus. Eaque aut nobis pariatur, voluptatum quo quaerat nesciunt dolorem nam, dicta, reiciendis aliquid magni.</p>
+                                <a href="#" class="btn">Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="img-slider">
+                            <div class="img-item" style="--i:4;">
+                                <img src="/images/Sites/ZAA.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="thumb">
+                    <li><img src="/images/Sites/smallJadoo.png"></li>
+                    <li><img src="/images/Sites/smalltravelFuture.png"></li>
+                    <li><img src="/images/Sites/smallFeaRIEND.png"></li>
+                    <li><img src="/images/Sites/smallOnlineTraining.png"></li>
+                    <li><img src="/images/Sites/smallZA.png"></li>
+
+                </ul>
             </div>
         </section>
 
-
+        <!-- <section class="quote">
+            <div>
+                <p>Il vaut mieux être plus intelligent qu'ont en a l'air qu'avoir l'air plus intelligent que l'ont ne l'ai</p>
+                <p>john cleese - james bond 007</p>
+            </div>
+            <div>
+                <p>Dans la vie on ne fait pas toujours ce que l'ont veut, surtout si l'ont essaye pas...</p>
+                <p>G. De Meyer</p>
+            </div>
+        </section> -->
 
     </main>
+<!-- Footer -->
+    <footer>
+        <p>© Copyright 2024 De Meyer Guilain. Tous droits réservés.</p>
+        <p>Plan du site | Mentions légales | Politique de confidentialité</p>
+        <p>Special thanks</p>
+    </footer>
+
+
+
+
+
 </body>
     <script src="script.js"></script>
 </html>
-
-
