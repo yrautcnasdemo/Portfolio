@@ -10,6 +10,9 @@ let index = 0;
 thumbs.forEach((thumb, ind) => {
     thumb.addEventListener('click', () => {
 
+        document.querySelector('.thumb .selected').classList.remove('selected');
+        thumb.classList.add('selected');
+
         index = ind;
 
         infoSlider.forEach(slide => {
@@ -23,15 +26,3 @@ thumbs.forEach((thumb, ind) => {
         items[index].classList.add('active');
     });
 });
-
-
-// let currentMainImage = 1;
-// function changeImage(src) {
-//     const fadeOutImage = document.getElementById(`mainImage${currentMainImage}`);
-//     currentMainImage = currentMainImage === 1 ? 2 : 1;
-//     const fadeInImage = document.getElementById(`mainImage${currentMainImage}`);
-    
-//     fadeOutImage.style.opacity = '0';
-//     fadeInImage.src = src;
-//     fadeInImage.style.opacity = '1';
-// }
