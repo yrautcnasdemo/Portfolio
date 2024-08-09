@@ -1,4 +1,7 @@
 /*General*/
+html {
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -28,9 +31,10 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     gap: 40px;
     z-index: 5;
+    transition: 0.5s ease;
 }
 header img {
     background-color: #1e1e1e;
@@ -49,7 +53,22 @@ nav a {
     text-decoration: none;
     font-size: 1rem;
     color: rgb(151, 151, 151);
+    transition: 0.4s ease-in-out;
 }
+nav a:hover{
+    color: #0d6efd;
+    transition: 0.4s ease-in-out;
+}
+#playButton{
+    padding: 5px;
+}
+.fixed{
+    transition: 0.5s ease;
+    background-color: #1d1d1d;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 /*INTRO*/
 .intro{
     background-image: url(/images/fontdev_BackToTheFuture02.jpg);
@@ -116,26 +135,35 @@ nav a {
     color: rgb(39, 85, 172);
 }
 
+
 /*MAIN*/
 /*ABOUT ME*/
 .aboutme {
     background-color: #2e3135;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+}
+.catbox {
+    max-width: 650px;
 }
 figcaption img {
     border: 4px solid aliceblue;
+    object-fit: cover;
     border-radius: 5px;
+    width: 100%;
+    transition: 0.2s ease;
+}
+figcaption img:hover{
+    filter: drop-shadow(0 0 0.25rem rgb(240, 248, 255));
+    transition: 0.2s ease;
 }
 .card-about-me {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 100px;
+    padding: 100px 10px;
 }
 .description-about-me {
     max-width: 600px;
@@ -439,6 +467,7 @@ figcaption img {
     align-items: start;
     gap: 30px;
     position: relative;
+    border: none;
 }
         .badfox{
             opacity: 1;
@@ -448,6 +477,13 @@ figcaption img {
             left: 100px;
             transform: rotate(17deg);
             z-index: 10;
+            transition: 0.4s ease;
+            pointer-events: none;
+            filter: drop-shadow(0 0 0.35rem rgb(0, 0, 0));
+        }
+        .displayfox{
+            opacity: 0;
+            transition: 0.4s ease;
         }
         .badfox2{
             opacity: 1;
@@ -456,6 +492,13 @@ figcaption img {
             bottom: 40px;
             right: 245px;
             z-index: 10;
+            transition: 0.4s ease;
+            pointer-events: none;
+            filter: drop-shadow(0 0 0.55rem rgb(0, 0, 0));
+        }
+        .displayfox2 {
+            transition: 0.4s ease;
+            opacity: 0;
         }
         .badfox3{
             opacity: 1;
@@ -465,6 +508,13 @@ figcaption img {
             right: -20px;
             transform: rotate(130deg);
             z-index: 10;
+            transition: 0.4s ease;
+            pointer-events: none;
+            filter: drop-shadow(0 0 0.55rem rgb(0, 0, 0));
+        }
+        .displayfox3{
+            transition: 0.4s ease;
+            opacity: 0;
         }
 .projet-info{
     display: flex;
@@ -480,7 +530,14 @@ figcaption img {
             width: 150px;
             top: -68px;
             left: 140px;
+            transition: 0.4s ease;
             z-index: 10;
+            pointer-events: none;
+            filter: drop-shadow(0 0 0.55rem rgb(0, 0, 0));
+        }
+        .displayfox4{
+            transition: 0.4s ease;
+            opacity: 0;
         }
         .badfox5{
             opacity: 1;
@@ -488,8 +545,16 @@ figcaption img {
             width: 150px;
             top: 295px;
             left: 290px;
+            transition: 0.4s ease;
             z-index: 10;
+            pointer-events: none;
+            filter: drop-shadow(0 0 0.55rem rgb(0, 0, 0));
         }
+        .displayfox5{
+            transition: 0.4s ease;
+            opacity: 0;
+        }
+        
 .send-contact {
     background-color: #0d6efd;
     border: 2px solid #0d6efd;

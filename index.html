@@ -10,15 +10,19 @@
 </head>
 <body>
 <!-- header -->
-    <section class="home">
+    <section class="home" id="home">
         <header>
             <img src="/images/logo/Cat.png" width="50px" alt="logocat">
             <nav>
-                <a href="home">Accueil</a>
-                <a href="aboutme">Qui suis-je</a>
-                <a href="myskill">Mes compétences</a>
-                <a href="mycreations">Mes créations</a>
-                <a href="contact">Me contacter</a>
+                <a href="#home">Accueil</a>
+                <a href="#aboutMe">Qui suis-je</a>
+                <a href="#my-skill">Mes compétences</a>
+                <a href="#mycreations">Mes créations</a>
+                <a href="#contact">Me contacter</a>
+                <!-- <button id="playButton"><img width="50px" src="/images/icons/button-play.png" alt="playbutton"></button>
+                <button id="stopButton"><img width="50px" src="/images/icons/button-stop.png" alt="stopbutton"></button>
+                Élément audio caché
+                <audio id="music" src="Mass Effect.mp3"></audio> -->
             </nav>
         </header>
     </section>
@@ -43,8 +47,8 @@
     <main>
         <section class="aboutme" id="aboutMe">
             <figure class="card-about-me">
-                <figcaption>
-                    <img src="/images/fontdev_astronaut-cat.jpg" width="650px" alt="spacecat">
+                <figcaption class="catbox">
+                    <img src="/images/fontdev_astronaut-cat.jpg" alt="spacecat">
                 </figcaption>
                 <div class="description-about-me">
                     <div class="description-about-me-2">
@@ -64,7 +68,7 @@
         </section>
 
 <!-- My skills -->
-        <section class="my-skill">
+        <section class="my-skill" id="my-skill">
             <div class="intro-myskill">
                 <h3>Mes compétences</h3>
                 <p>En tant que développeur web junior, les langages sur lesquels j'ai beaucoup travaillé pendant ma formation sont HTML, CSS, JavaScript, PHP et MySQL. Étant passionné par le code, j'ai entamé l'apprentissage de React et Symfony pendant mon temps libre, il s'agit de deux technologies supplémentaires qui m'intéressent énormément. Pour soutenir mes études et mon apprentissage, j'utilise notamment les cours de <a class="soutient" target="_blank" href="https://fromscratch.podia.com/">From Scratch</a> pour le front-end et de <a class="soutient" target="_blank" href="https://nouvelle-techno.fr/">Nouvelle-Techno</a> pour le back-end car je trouve ces ressources extrêmement bien construites.</p>
@@ -87,7 +91,7 @@
         </section>
 
 <!-- My Creations -->
-        <section>
+        <section id="mycreations">
             <div class="carousel">
                 <div class="item active">
                     <div class="bg"></div>
@@ -200,7 +204,7 @@
         </section>
 
 <!-- Contact Me -->
-        <section class="contact-me">
+        <section class="contact-me" id="contact">
             <div>
                 <h4>Je suis disponible en temps que <span>Freelance</span></h4>
                 <h5>contactez-moi</h5>
@@ -213,24 +217,24 @@
                             <label for="last_name">Nom:</label><br>
                             <input type="text" id="last_name" placeholder="Votre nom" required>
                         </div>
-                        <img class="badfox2" src="/images/icons/badfox-point2.png" alt="badfoxicon2">
+                        <img class="badfox2 displayfox2" src="/images/icons/badfox-point2.png" alt="badfoxicon2">
                         <div>
                             <label for="first_name">Prenom:</label><br>
                             <input type="text" id="first_name" placeholder="Votre prenom" required>
                         </div>
-                        <img class="badfox3" src="/images/icons/grrrr.png" alt="badfoxicon3">
+                        <img class="badfox3 displayfox3" src="/images/icons/grrrr.png" alt="badfoxicon3">
                         <div>
                             <label for="email">Email:</label><br>
                             <input type="email" id="email" placeholder="votre@email.com" required>
                         </div>
                     </div>
                     <div class="projet-info">
-                        <img class="badfox4" src="/images/icons/Noooo.png" alt="badfoxicon4">
+                        <img class="badfox4 displayfox4" src="/images/icons/Noooo.png" alt="badfoxicon4">
                         <div>
                             <label for="subject">Sujet:</label><br>
                             <input type="text" id="subject" placeholder="Sujet de votre message" required>
                         </div>
-                        <img class="badfox5" src="/images/icons/paper.png" alt="badfoxicon5">
+                        <img class="badfox5 displayfox5" src="/images/icons/paper.png" alt="badfoxicon5">
                         <div>
                             <label for="message">M'exposer votre projet en quelques lignes:</label><br>
                             <textarea id="message" rows="5" placeholder="Votre message ici" required></textarea>
