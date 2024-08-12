@@ -1,10 +1,27 @@
+// BURGER MENU
+const burgerWrap = document.querySelector('.burger-wrap');
+const navLinkBurger = document.querySelector('.nav-link-burger');
+
+burgerWrap.addEventListener('click', () => {
+    /*ANIMATION BG-ICON*/
+    burgerWrap.classList.toggle('active');
+
+    /*Open Nav BG-MENU*/
+    if (navLinkBurger.style.left === "0px"){
+        navLinkBurger.style.left = "-1800px"
+    } else {
+        navLinkBurger.style.left = "0px";
+    }
+    
+});
+
+
+
 // CAROUSEL @CODEHAL
 const thumbs = document.querySelectorAll('.thumb li');
 const infoSlider = document.querySelectorAll('.info-slider');
 const imgSlider = document.querySelectorAll('.img-slider');
 const items = document.querySelectorAll('.item');
-
-
 
 let index = 0;
 
@@ -100,3 +117,6 @@ demande.addEventListener('focus', () => {
 //             music.pause();
 //             music.currentTime = 0;
 //         });
+
+
+
