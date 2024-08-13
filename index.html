@@ -28,15 +28,24 @@
                 <a href="#contact">Me contacter</a>
             </div>
             <nav>
-                <a href="#home">Accueil</a>
-                <a href="#aboutMe">Qui suis-je</a>
-                <a href="#my-skill">Mes compétences</a>
-                <a href="#mycreations">Mes créations</a>
-                <a href="#contact">Me contacter</a>
-                <!-- <button id="playButton"><img width="50px" src="/images/icons/button-play.png" alt="playbutton"></button>
-                <button id="stopButton"><img width="50px" src="/images/icons/button-stop.png" alt="stopbutton"></button>
-                Élément audio caché
-                <audio id="music" src="Mass Effect.mp3"></audio> -->
+                <div class="nav-menu">
+                    <a href="#home">Accueil</a>
+                    <a href="#aboutMe">Qui suis-je</a>
+                    <a href="#my-skill">Mes compétences</a>
+                    <a href="#mycreations">Mes créations</a>
+                    <a href="#contact">Me contacter</a>
+                </div>
+                <div class="panel-music">
+                    <div class="marquee-rtl">
+                        <!-- le contenu défilant -->
+                        <div>Mass Effect Trilogy - Extended Galaxy Map Theme (HD)...</div>
+                    </div>
+                    <a id="playButton"><img width="48px" src="/images/icons/button-play.png" alt="playbutton"></a>
+                    <a id="stopButton"><img width="50px" src="/images/icons/button-stop.png" alt="stopbutton"></a>
+                    <!-- Élément audio caché -->
+                    <audio id="music" src="Mass Effect.mp3"></audio>
+                </div>
+
             </nav>
         </header>
     </section>
@@ -127,7 +136,6 @@
                 </div>
 
                 <div class="item">
-                    <div class="bg"></div>
                     <div class="info-box">
                         <div class="info-slider">
                             <div class="info-item" style="--i:1;">
@@ -147,7 +155,6 @@
                 </div>
                 
                 <div class="item">
-                    <div class="bg"></div>
                     <div class="info-box">
                         <div class="info-slider">
                             <div class="info-item" style="--i:2;">
@@ -167,7 +174,6 @@
                 </div>
 
                 <div class="item">
-                    <div class="bg"></div>
                     <div class="info-box">
                         <div class="info-slider">
                             <div class="info-item" style="--i:3;">
@@ -187,11 +193,10 @@
                 </div>
 
                 <div class="item">
-                    <div class="bg"></div>
                     <div class="info-box">
                         <div class="info-slider">
                             <div class="info-item" style="--i:4;">
-                                <h2>Ardace Zone</h2>
+                                <h2>Arcade Zone</h2>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, possimus. Eaque aut nobis pariatur, voluptatum quo quaerat nesciunt dolorem nam, dicta, reiciendis aliquid magni.</p>
                                 <a href="#" class="btn">Voir le site</a>
                             </div>
@@ -215,6 +220,7 @@
                 </ul>
             </div>
         </section>
+
 
 <!-- Contact Me -->
         <section class="contact-me" id="contact">

@@ -105,18 +105,18 @@ demande.addEventListener('focus', () => {
 
 
 
-// let music = document.getElementById('music');
+let music = document.getElementById('music');
 
-//         // Jouer la musique
-//         document.getElementById('playButton').addEventListener('click', () => {
-//             music.play();
-//         });
+        // Jouer la musique
+        document.getElementById('playButton').addEventListener('click', () => {
+            music.play();
+        });
 
-//         // Arrêter la musique
-//         document.getElementById('stopButton').addEventListener('click', () => {
-//             music.pause();
-//             music.currentTime = 0;
-//         });
+        // Arrêter la musique
+        document.getElementById('stopButton').addEventListener('click', () => {
+            music.pause();
+            music.currentTime = 0;
+        });
 
 
 
