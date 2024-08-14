@@ -1,19 +1,59 @@
+
+//ON HOVER PLAY SOUND FOR NAV LINKS
+const menuLinks = document.querySelectorAll('.menu-Button');
+const sound = document.getElementById('hoverSound');
+
+menuLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+//          ON CLICK PLAY SOUND FOR NAV LINKS
+//          link.addEventListener('click', () => {
+        sound.currentTime = 0;
+        sound.play();
+    });
+});
+
+
+
+
+//FAKE RADIO MUSIC + SLIDER TITLE ON/OFF
+const music = document.getElementById('music');
+const sliderMusic = document.querySelector('.slider-music')
+
+// Jouer la musique
+document.getElementById('playButton').addEventListener('click', () => {
+    music.play();
+    sliderMusic.classList.remove('hidden-music');
+});
+
+// Stop la musique
+document.getElementById('stopButton').addEventListener('click', () => {
+    music.pause();
+    music.currentTime = 0;
+    sliderMusic.classList.add('hidden-music');
+});
+
+
+
+
 // BURGER MENU
 const burgerWrap = document.querySelector('.burger-wrap');
 const navLinkBurger = document.querySelector('.nav-link-burger');
+const woop = document.getElementById('click-burger-sound');
 
 burgerWrap.addEventListener('click', () => {
     /*ANIMATION BG-ICON*/
     burgerWrap.classList.toggle('active');
+    woop.play();
 
     /*Open Nav BG-MENU*/
     if (navLinkBurger.style.left === "0px"){
-        navLinkBurger.style.left = "-1800px"
+        navLinkBurger.style.left = "-210px"
     } else {
         navLinkBurger.style.left = "0px";
     }
     
 });
+
 
 
 
@@ -48,7 +88,7 @@ thumbs.forEach((thumb, ind) => {
 
 // HEADER ScrollY adding classlist
 window.addEventListener('scroll', () => {
-    let header = document.querySelector("header");
+    const header = document.querySelector("header");
     header.classList.toggle("fixed", window.scrollY > 700);
 });
 
@@ -105,18 +145,9 @@ demande.addEventListener('focus', () => {
 
 
 
-let music = document.getElementById('music');
 
-        // Jouer la musique
-        document.getElementById('playButton').addEventListener('click', () => {
-            music.play();
-        });
 
-        // Arrêter la musique
-        document.getElementById('stopButton').addEventListener('click', () => {
-            music.pause();
-            music.currentTime = 0;
-        });
+
 
 
 
