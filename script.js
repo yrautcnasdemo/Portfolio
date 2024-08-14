@@ -1,3 +1,11 @@
+// HEADER ScrollY adding classlist
+window.addEventListener('scroll', () => {
+    const header = document.querySelector("header");
+    header.classList.toggle("fixed", window.scrollY > 700);
+});
+
+
+
 
 //ON HOVER PLAY SOUND FOR NAV LINKS
 const menuLinks = document.querySelectorAll('.menu-Button');
@@ -86,11 +94,6 @@ thumbs.forEach((thumb, ind) => {
 });
 
 
-// HEADER ScrollY adding classlist
-window.addEventListener('scroll', () => {
-    const header = document.querySelector("header");
-    header.classList.toggle("fixed", window.scrollY > 700);
-});
 
 
 //MY LITTLE FOXs
@@ -104,7 +107,6 @@ const fox2 = document.querySelector('.badfox2');
 const fox3 = document.querySelector('.badfox3');
 const fox4 = document.querySelector('.badfox4');
 const fox5 = document.querySelector('.badfox5');
-
 
 nom.addEventListener('focus', () => {
     fox.classList.remove('displayfox');
