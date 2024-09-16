@@ -27,6 +27,8 @@ menuLinks.forEach(link => {
 const music = document.getElementById('music');
 const sliderMusic = document.querySelector('.slider-music')
 
+
+
 // Jouer la musique
 document.getElementById('playButton').addEventListener('click', () => {
     music.play();
@@ -43,7 +45,7 @@ document.getElementById('stopButton').addEventListener('click', () => {
 
 
 
-// BURGER MENU
+// BURGER MENU @CODEHAL
 const burgerWrap = document.querySelector('.burger-wrap');
 const navLinkBurger = document.querySelector('.nav-link-burger');
 const woop = document.getElementById('click-burger-sound');
@@ -96,7 +98,7 @@ thumbs.forEach((thumb, ind) => {
 
 
 
-//MY LITTLE FOXs
+//LITTLE FOX
 const nom = document.querySelector('#last_name');
 const prenom = document.querySelector('#first_name');
 const courrier = document.querySelector('#email');

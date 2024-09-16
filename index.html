@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <!-- Link bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Portfolio G.De_Meyer</title>
 </head>
 <body>
@@ -21,13 +21,13 @@
                     <audio id="click-burger-sound" src="woop (mp3cut.net).wav" type="audio/wav"></audio>
                 </div>
             </div>
-            <div class="nav-link-burger">
+            <nav class="nav-link-burger">
                 <a class="menu-Button" href="#home">Accueil</a>
                 <a class="menu-Button" href="#aboutMe">Qui suis-je</a>
                 <a class="menu-Button" href="#my-skill">Mes compétences</a>
                 <a class="menu-Button" href="#mycreations">Mes créations</a>
                 <a class="menu-Button" href="#contact">Me contacter</a>
-            </div>
+            </nav>
             <nav>
                 <div class="nav-menu">
                     <a class="menu-Button" href="#home">Accueil<span></span><span></span></a>
@@ -52,7 +52,7 @@
 <!-- introduction -->
     <section class="intro">
         <div class="filter">
-            <div class="welcome">
+            <article class="welcome">
                 <span>Bienvenue !</span>
                 <h1>Je suis Développeur</h1>
                 <p>Je m'appelle Guilain De Meyer, je suis étudiant en développement web & web mobile depuis Mars 2024, j'apprécie autant travailler sur du front-end que du back-end, mais tout ça, je vous en parle plus ci-dessous...</p>
@@ -61,7 +61,7 @@
                 <div class="mouseBtn">
                     <a href="#aboutMe"><i class="bi bi-mouse"></i></a> 
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -69,23 +69,23 @@
     <main>
         <section class="aboutme" id="aboutMe">
             <figure class="card-about-me">
-                <figcaption class="catbox">
-                    <img src="/images/fontdev_astronaut-cat.jpg" alt="spacecat">
-                </figcaption>
-                <div class="description-about-me">
+                <div class="catbox">
+                    <img class="img-about-me" src="/images/fontdev_astronaut-cat.jpg" alt="spacecat">
+                </div>
+                <figcaption class="description-about-me">
                     <div class="description-about-me-2">
                         <h2>Qui suis-je ?</h2>
                         <p class="introduction">Bonjour, je suis <span>Guilain De Meyer.</span></p>
                         <p>Étudiant en développement web et web mobile, j'attache une grande importance à la création de sites web clairs, intuitifs et attrayants, afin d'offrir la meilleure expérience utilisateur possible. Je mets l'accent sur la création de sites web qui répondent aux besoins de mes clients, tout en m'efforçant de les surpasser en termes de fonctionnalité, d'esthétique et de performance. Je suis convaincu qu'un bon site web doit être le fruit d'un équilibre parfait entre le front-end et le back-end. </p>
                     </div>
                     <div class="reseaux">
-                        <a href="https://www.linkedin.com/in/guilain-de-meyer-3aa4a5317/"><button class="reseauxBtn bi bi-linkedin"></button></a>
+                        <a href="https://www.linkedin.com/in/guilain-de-meyer-3aa4a5317/" target="_blank"><button class="reseauxBtn bi bi-linkedin"></button></a>
                         <a href=""><button class="reseauxBtn bi bi-github"></button></a>
                         <a href=""><button class="reseauxBtn bi bi-discord"></button></a>
                         <a href=""><button class="reseauxBtn bi bi-facebook"></button></a>
                         <a href=""><button class="reseauxBtn bi bi-instagram"></button></a>
                     </div>
-                </div>
+                </figcaption>
             </figure>
         </section>
 
@@ -93,7 +93,7 @@
         <section class="my-skill" id="my-skill">
             <div class="intro-myskill">
                 <h3>Mes compétences</h3>
-                <p>En tant que développeur web junior, les langages sur lesquels j'ai beaucoup travaillé pendant ma formation sont HTML, CSS, JavaScript, PHP et MySQL. Étant passionné par le code, j'ai entamé l'apprentissage de React et Symfony pendant mon temps libre, il s'agit de deux technologies supplémentaires qui m'intéressent énormément. Pour soutenir mes études et mon apprentissage, j'utilise notamment les cours de <a class="soutient" target="_blank" href="https://fromscratch.podia.com/">From Scratch</a> pour le front-end et de <a class="soutient" target="_blank" href="https://nouvelle-techno.fr/">Nouvelle-Techno</a> pour le back-end car je trouve ces ressources extrêmement bien construites.</p>
+                <p>En tant que développeur web, les langages sur lesquels j'ai beaucoup travaillé pendant ma formation sont HTML, CSS, JavaScript, PHP et MySQL. Étant passionné par le code, j'ai entamé l'apprentissage de React et Symfony pendant mon temps libre, il s'agit de deux technologies supplémentaires qui m'intéressent énormément. Pour soutenir mes études et mon apprentissage, j'utilise notamment les cours de <a class="soutient" target="_blank" href="https://fromscratch.podia.com/">From Scratch</a> pour le front-end et de <a class="soutient" target="_blank" href="https://nouvelle-techno.fr/">Nouvelle-Techno</a> pour le back-end car je trouve ces ressources extrêmement bien construites.</p>
             </div>
 
 
@@ -224,7 +224,7 @@
 <!-- Contact Me -->
         <section class="contact-me" id="contact">
             <div>
-                <h4>Je suis disponible en temps que <span>Freelance</span></h4>
+                <h4>Je suis disponible en tant que <span>Freelance</span></h4>
                 <h5>contactez-moi</h5>
             </div>
             <form class="form-contact">
